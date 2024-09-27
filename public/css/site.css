@@ -1,0 +1,201 @@
+/*
+ @author Umar Riaz 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins' !important;
+}
+
+body {
+  width: auto !important;
+  min-height: 100% !important;
+  background: #ffffff;
+  margin: 0;
+  width: 100%;
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#mainSection {
+  margin-top: 8rem !important;
+  width: 100% !important;
+  text-align: center !important;
+  padding: 1% !important;
+}
+
+.imgR {
+  max-width: 400px;
+  padding: 0 10px;
+  overflow: hidden;
+  float: right;
+  margin-top: 20px;
+}
+
+.imageR {
+  max-width: 300px;
+  padding: 0 10px;
+  overflow: hidden;
+  float: left;
+}
+
+.homepageContainer {
+
+  padding: 20px 105px 0;
+  background: white;
+  border-radius: 50px;
+  /* box-shadow: 0 0 15px 1px rgb(255 0 49 / 25%); */
+  box-shadow: 0 0 15px 1px rgba(139 182 29 / 50%);
+
+  /* box-shadow: 0 0 15px 1px rgb(0 180 96 / 25%); */
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 90%;
+  margin: auto;
+
+}
+
+.con {
+  text-align: justify !important;
+}
+
+.mpbtn {
+  background: #8CB61D;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 130px;
+  border: 1px solid #8CB61D;
+  margin: 0 5px;
+  /* text-transform: uppercase; */
+  display: inline-block;
+  width: fit-content;
+}
+
+.MidContainer {
+
+  margin: 2% !important;
+  /* background:rgb(139 182 29 / 3%); */
+  width: auto;
+  /* height: 60vh; */
+}
+input::-webkit-input-placeholder {
+  font-size: 15px;
+  line-height: 3;
+}
+textarea::-webkit-input-placeholder {
+  font-size: 15px;
+  line-height: 1;
+}
+/* .select2-search__field:placeholder-shown::-webkit-input-placeholder {
+  font-size: 15px;
+  line-height: 1;
+} */
+.rangeText {
+  border: 0;
+  width: 100% !important;
+  font-weight: bold;
+  padding: 0%;
+  background: transparent;
+}
+
+.rangValue {
+  border: 0;
+  min-width: 60px;
+}
+
+.sl {
+  margin-left: 20px;
+}
+
+.pubgroup {
+
+  border: 2px solid rgb(231, 228, 228);
+  padding: 20px;
+  margin-bottom: 5px;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.persongroup {
+  border: 2px solid rgb(231, 228, 228);
+  padding: 20px;
+  margin-bottom: 2px;
+}
+/* Close Button */
+.closebtn{
+  float: inline-end;
+}
+.couter {
+  position: relative;
+  width: 40px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: -2rem;
+  float: inline-end;
+}
+
+.cinner {
+width: inherit;
+text-align: center;
+}
+
+.cinner label { 
+font-size: .8em !important; 
+line-height: 4em !important;
+text-transform: uppercase !important;
+color: #e71a1a;;
+transition: all .3s ease-in;
+opacity: 0;
+cursor: pointer;
+}
+
+.cinner:before, .cinner:after {
+position: absolute;
+content: '';
+height: 1px;
+width: inherit;
+background: #e71a1a;
+left: 0;
+transition: all .3s ease-in;
+}
+
+.cinner:before {
+top: 50%; 
+transform: rotate(45deg);  
+}
+
+.cinner:after {  
+bottom: 50%;
+transform: rotate(-45deg);  
+}
+
+.couter:hover label {
+opacity: 1;
+}
+
+.couter:hover .cinner:before,
+.couter:hover .cinner:after {
+transform: rotate(0);
+}
+
+.couter:hover .cinner:before {
+top: 0;
+}
+
+.couter:hover .cinner:after {
+bottom: 0;
+}
+.btn-sm{
+  width: fit-content !important;
+}
+ 

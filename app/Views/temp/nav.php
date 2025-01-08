@@ -21,7 +21,7 @@
             <a id ="editdata" class="nav-link" href="<?php echo base_url('/editdata') ?>">Edit Data</a>
         </li>
         <li class="nav-item">
-            <a  id ="explore" class="nav-link" href="<?php echo base_url('/developing') ?>" target="_blank">Explore Datasets</a>
+            <a  id ="explore" class="nav-link" href="<?php echo base_url('/discover') ?>" target="_blank">Explore Datasets</a>
         </li>
       </ul>
     </div>

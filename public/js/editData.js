@@ -280,7 +280,7 @@ $(function () {
       width: "100%",
     });
     var data_agerange = $("#d_agerange").val().trim().split("-");
-    console.log(data_agerange);
+    //console.logdata_agerange);
     var values = [data_agerange[0], data_agerange[1]];
     // var values = [18, 45]
     $("#Ar-urange").slider({
@@ -354,7 +354,7 @@ $(function () {
       type: "POST",
       data: formData,
       success: function (response) {
-        console.log(response)
+        //console.logresponse)
         if (response.success) {
           // Show success message with Swal
           Swal.fire({
@@ -387,9 +387,9 @@ $(function () {
       },
       error: function (jqXHR, textStatus, errorThrown) {
 
-        console.log(errorThrown);
-        console.log(textStatus);
-        console.log(jqXHR);
+        //console.logerrorThrown);
+        //console.logtextStatus);
+        //console.logjqXHR);
         Swal.fire({
           title: "Error!",
           text: errorThrown,
@@ -459,13 +459,13 @@ $(function () {
   // Display validation errors
   function displayValidationErrors(errors) {
 
-    console.log(errors)
+    //console.logerrors)
     // Clear previous errors
     $(".error").html("");
 
     // Display new errors
     $.each(errors, function (field, errorMessage) {
-      console.log(field , errorMessage)
+      //console.logfield , errorMessage)
       $("#" + field + "-error").html(errorMessage);
     });
   }
@@ -492,7 +492,7 @@ $(function () {
     });
     const arr = {};
     arr["researcher"] = researchers;
-    console.log(arr)
+    //console.logarr)
     return arr;
   }
   // Collect publication data (if applicable)
@@ -511,7 +511,7 @@ $(function () {
     const arr = {};
     arr["pubs"] = publications;
 
-    console.log(arr);
+    //console.logarr);
     return arr;
   }
   // Collect condition data (if applicable)

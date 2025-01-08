@@ -305,8 +305,8 @@ $(function () {
 
   var SanitizeAndValidate = async (current_fs) => {
     var formData = current_fs.find("input, select, textarea").serialize();
-    console.log(current_fs);
-    console.log(formData);
+    //console.logcurrent_fs);
+    //console.logformData);
 
     // Check if formData only contains the step value
     if (formData === "step=three" || formData === "step=five") {
@@ -321,12 +321,12 @@ $(function () {
       });
 
       $(".error").text(""); // Clear all error messages
-      console.log(response); // Log the entire response for debugging
+      //console.logresponse); // Log the entire response for debugging
       if (response.success) {
         return true;
       } else {
         $.each(response.errors, function (key, value) {
-          console.log(key, value); // Log each key-value pair for debugging
+          //console.logkey, value); // Log each key-value pair for debugging
           $("#" + key + "-error").text(value);
         });
         return false;
@@ -339,9 +339,10 @@ $(function () {
 
   $(document).ready(function () {
     const url = window.location.href;
-    console.log(url);
+    //console.logurl);
     let names = url.split("/");
-    let router = names[4];
+    console.log(names);
+    let router = names[3];
     console.log(router);
     let me = $('ul li a');
     switch (router) {

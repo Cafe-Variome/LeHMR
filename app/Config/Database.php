@@ -29,7 +29,7 @@ class Database extends Config
         'hostname'     => 'localhost',
         'username'     => 'lampuser',
         'password'     => 'changeme',
-        'database'     => 'LeHMRDb_2_Test',
+        'database'     => 'LeHMRDb2',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,

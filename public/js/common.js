@@ -70,7 +70,7 @@ var addToReview = function(Fid,tbid){
     });
 
     McInfo.forEach(function (e) {
-        console.log(e);
+        //console.loge);
         tbid.append(`
             <tr>
                 <td class="text-start "><b>${e.Name}</b></td>

@@ -19,14 +19,14 @@
         <p>To maximise their wider/secondary use in a responsible manner, NIHR Leicester BRC and HDR UK Leicester have established the "Leicester Health & Medical Data for Research" (LeHMR). This platform will list the wealth of local academic and healthcare datasets that researchers can request access to. This work operates in synergy with the <a href="https://www.healthdatagateway.org/" target="_blank">HDR UK Innovation Gateway</a>.</p>
         <p>"LeHMR Online" is a simple platform that enables PIs, or nominated members of their team, to manage/submit metadata about their datasets (e.g., description, researchers, publications, data use conditions) so that they can be easily discovered by internal and external researchers.</p>
         <p>Leicester investigators are therefore now invited and encouraged to use LeHMR (with support available from the BRC and HDR UK informatics teams) to provide core metadata and make this visible from the LeHMR platform. Investigators have the option to request that their datasets are also made visible from the national HDR UK Innovation Gateway.</p>
-        <p>For further details about LeHMR please contact <a href="" id="timb">Tim Beck</a>,<a id="tims" href=""> Tim Skelton</a> or <a id="tonyb" href="">Anthony Brookes </a>.
+        <p>For further details about LeHMR please contact <a id="tonyb" href="">Dr. Anthony Brookes </a>.
           For technical assistance or to get help to use the interface please contact <a id="umar" href="">Umar Riaz.</a></p>
     </div>
     <hr>
     <div class="text-center mb-3">
       <a href="<?php echo base_url('/Getdata/index') ?>" class="btn mpbtn">Add Data</a>
       <a href="<?php echo base_url('/Editdata/viewdata') ?>" class="btn mpbtn">Edit Data</a>
-      <a href="<?php echo base_url('/developing') ?>" target="_blank" class="btn mpbtn">Explore Datasets</a>
+      <a href="<?php echo base_url('/discover') ?>" target="_blank" class="btn mpbtn">Explore Datasets</a>
     </div>
     
 

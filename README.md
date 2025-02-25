@@ -1,67 +1,82 @@
-# CodeIgniter 4 Application Starter
+# Leicester Health & Medical Data for Research (LeHMR)
 
-## What is CodeIgniter?
+Leicester researchers and clinicians have produced a large number of biomedical datasets from cohort studies, clinical trials, healthcare practice, and audit projects. These constitute a valuable resource that can be shared to facilitate new analyses and original discoveries.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+To maximise their wider/secondary use responsibly, NIHR Leicester BRC and HDR UK Leicester have established the **"Leicester Health & Medical Data for Research" (LeHMR)**. This platform will list the wealth of local academic and healthcare datasets that researchers can request access to. This work operates in synergy with the [HDR UK Innovation Gateway](https://healthdatagateway.org/en).
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+"LeHMR Online" is a simple platform that enables PIs, or nominated members of their team, to manage/submit metadata about their datasets (e.g., description, researchers, publications, data use conditions) so that they can be easily discovered by internal and external researchers.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+Leicester investigators are therefore now invited and encouraged to use LeHMR (with support available from the BRC and HDR UK informatics teams) to provide core metadata and make this visible from the LeHMR platform. Investigators have the option to request that their datasets be also made visible from the national HDR UK Innovation Gateway.
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+For further details about LeHMR please contact **[Dr. Anthony Brookes](mailto:ajb97@leicester.ac.uk)**. For technical assistance or to get help to use the interface please contact **[Umar Riaz](mailto:ur13@leicester.ac.uk)**.
 
-## Installation & updates
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+Access the tool at: [LeHMR](https://lehmr.le.ac.uk/)
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
 
-## Setup
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+## Technology Stack
 
-## Important Change with index.php
+The **DUC Profile Creator** is developed using **CodeIgniter**, a lightweight and flexible PHP full-stack web framework known for its speed, security, and scalability. Learn more about CodeIgniter at the [official website](http://codeigniter.com).
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+---
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+## Development Guide
 
-**Please** read the user guide for a better explanation of how CI4 works!
+### Server Requirements
 
-## Repository Management
+Ensure your server meets the following prerequisites:
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+- **PHP** version **7.3** or higher, with the following extensions installed:
+  - [intl](http://php.net/manual/en/intl.requirements.php)
+  - [libcurl](http://php.net/manual/en/curl.requirements.php) (Required for HTTP\CURLRequest library)
+  - **Required PHP extensions (enabled by default in most setups):**
+    - JSON
+    - [mbstring](http://php.net/manual/en/mbstring.installation.php)
+    - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
+    - XML
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+### Installation & Setup
 
-## Server Requirements
+To set up the application, follow these steps:
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+1. **Clone the repository**:
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+   ```bash
+   https://github.com/Cafe-Variome/LeHMR2.0.git
+   ```
 
-> **Warning**
-> The end of life date for PHP 7.4 was November 28, 2022. If you are
-> still using PHP 7.4, you should upgrade immediately. The end of life date
-> for PHP 8.0 will be November 26, 2023.
+2. **Navigate to the project directory**:
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+   ```bash
+   cd LeHMR2.0
+   ```
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+3. **Install dependencies using Composer**:
+
+   ```bash
+   php composer install
+   ```
+
+4. **Set up environment variables**:
+
+   - Copy `env` to `.env` and configure the settings, including the base URL and database credentials.
+
+5. **Database Configuration**:
+
+   - import `LeHMRschema.sql` into your database.
+   - Configure database settings in `.env` or `app/config/Database.php`.
+
+### Support & Contact
+
+For setup-related inquiries, please contact **[Umar Riaz](mailto:ur13@leicester.ac.uk)**.
+
+---
+
+### Contribution & Future Development
+
+We welcome contributions to improve and extend this tool. If you encounter any issues or have suggestions, feel free to submit a pull request or reach out to the maintainers.
+
+---
+
+This project is developed and maintained to maximise wider/secondary use of discoveries in a responsible manner. We appreciate your support and feedback!

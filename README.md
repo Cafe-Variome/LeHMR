@@ -43,13 +43,13 @@ To set up the application, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   https://github.com/Cafe-Variome/LeHMR2.0.git
+   https://github.com/Cafe-Variome/LeHMR.git
    ```
 
 2. **Navigate to the project directory**:
 
    ```bash
-   cd LeHMR2.0
+   cd LeHMR
    ```
 
 3. **Install dependencies using Composer**:
